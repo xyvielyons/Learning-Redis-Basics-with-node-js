@@ -1,0 +1,17 @@
+{
+  //we are going to link the downloaded tsconfig settings
+    "extends":"@tsconfig/node22/tsconfig.json",
+    "compilerOptions": {
+      //the javascript files are going to be stored in outdir
+      "outDir": "dist",
+      //we can allow vanilla javascript
+      "allowJs": true,
+      //dont build if there is an error
+      "noEmitOnError": true
+  
+    },
+    //we are going to store our ts files in src 
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+  }
+  
